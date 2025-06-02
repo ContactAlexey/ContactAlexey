@@ -60,13 +60,13 @@
 <h2 align="center"><img src="https://emojis.slackmojis.com/emojis/images/1579216111/7550/pikachu_wave.gif?1579216111" align="center" width="40" />𝒞𝑜𝓃𝓉𝒶𝒸𝓉 𝑀𝑒</h2>
 
 <p align="center">
-  <a href="contactalexey@gmail.com" >
-   <img alt="Gmail" width='100' src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a> &nbsp;&nbsp;
-  
-  <a href="www.linkedin.com/in/alexey-tenllado-león-1a496135a" target="_blank">
-   <img alt="LinkedIn" width='100' src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a> &nbsp;&nbsp;
+  <a href="mailto:contactalexeytenllado@gmail.com">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="40" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/alexey-tenllado-león-1a496135a">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40" alt="LinkedIn" />
+  </a>
 </p>
 <br>
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%" align="center">
