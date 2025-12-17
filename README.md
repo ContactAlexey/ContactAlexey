@@ -46,10 +46,16 @@
   <img src="https://img.shields.io/badge/Eclipse-FE7A16?style=for-the-badge&logo=Eclipse&logoColor=white" />
   <img src="https://img.shields.io/badge/Notepad++-90E59A?style=for-the-badge&logo=notepad%2b%2b&logoColor=black" />
   <img src="https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=for-the-badge&logoColor=white" />
+  
+  <!-- 🗄️ Database Tools -->
+  <img src="https://img.shields.io/badge/SQL_Developer-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white" />
   <img src="https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=VirtualBox&logoColor=white" />
 </p>
+
 
 <!-- ===========================
       🖥️ OPERATING SYSTEMS
