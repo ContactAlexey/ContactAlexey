@@ -18,7 +18,11 @@
 
 ## `01` About Me
 
-I'm **20**, and I spend most of my time figuring out how the systems around us actually work — and how they break.
+<table>
+<tr>
+<td width="60%" valign="top">
+
+I'm **19**, and I spend most of my time figuring out how the systems around us actually work — and how they break.
 
 My interest sits right in the overlap between **software development**, **cybersecurity** and **AI**. I like the duality of the offensive/defensive mindset: understanding how something can be attacked is what makes you able to defend it properly.
 
@@ -29,13 +33,17 @@ Currently focused on:
 - 🌐 Web development & CMS-based platforms
 - 🤖 Exploring practical AI tooling and automation
 - 📡 Sharing what I learn — cybersecurity tips, dev projects, and behind-the-scenes builds
+
+</td>
 <td width="40%" valign="top" align="center">
+
+<img src="https://media.giphy.com/media/XgN35QOWSzLKGISuxm/giphy.gif" width="220"/>
 
 </td>
 </tr>
 </table>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `02` Tech Stack
 
@@ -116,7 +124,50 @@ Currently focused on:
 
 <img src="grid.svg" width="100%"/>
 
-## `04` Network Visualization
+## `04` Featured Projects
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 📡 [ScanPa](https://github.com/ContactAlexey/ScanPa)
+<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=66E3FF" /> <img src="https://img.shields.io/badge/MicroPython-0D1117?style=flat-square&logoColor=A855F7" />
+
+CLI que usa una placa MicroPython (ESP32/ESP8266) por USB para escanear puntos de acceso WiFi cercanos: identifica fabricante por OUI en local, estima distancia por RSSI, detecta el tipo de seguridad de cada red y registra cada escaneo automáticamente en TXT.
+
+</td>
+<td width="50%" valign="top">
+
+### 🛰️ [SentinelSec](https://contactalexey.github.io/SentinelSec/)
+<img src="https://img.shields.io/badge/HTML%2FJS-0D1117?style=flat-square&logo=html5&logoColor=4F9DFF" /> <img src="https://img.shields.io/badge/GitHub_Pages-0D1117?style=flat-square&logo=github&logoColor=66E3FF" />
+
+Reto interactivo de análisis de amenazas estilo SOC (Security Operations Center), jugable directamente desde el navegador. Incluye niveles, reglas propias y créditos.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧮 [ttlscan](https://github.com/ContactAlexey/ttlscan)
+<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=66E3FF" /> <img src="https://img.shields.io/badge/Linux%2FWindows-0D1117?style=flat-square&logoColor=A855F7" />
+
+Herramienta de análisis de TTL para diagnóstico de red y seguridad: estima el sistema operativo de destino, detecta rutas anómalas, presencia de NAT/proxy/VPN y genera un informe técnico completo.
+
+</td>
+<td width="50%" valign="top">
+
+### 🗂️ [SheetXpert](https://github.com/ContactAlexey/SheetXpert)
+<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=66E3FF" /> <img src="https://img.shields.io/badge/Tkinter-0D1117?style=flat-square&logoColor=66E3FF" />
+
+App de escritorio con interfaz gráfica que recopila información técnica de un equipo Windows vía PowerShell (disco, red, BIOS, batería, CPU...) y exporta un informe a PDF. Soporta español e inglés.
+
+</td>
+</tr>
+</table>
+
+<img src="grid.svg" width="100%"/>
+
+## `05` Network Visualization
 
 <div align="center">
 <sub>A simplified map of my current stack, routed through a central node</sub>
@@ -126,7 +177,7 @@ Currently focused on:
 
 <img src="grid.svg" width="100%"/>
 
-## `05` Cybersecurity & AI
+## `06` Cybersecurity & AI
 
 <div align="center">
 <sub>Where offensive security thinking meets automated pattern recognition</sub>
@@ -158,7 +209,7 @@ Currently focused on:
 
 <img src="grid.svg" width="100%"/>
 
-## `06` GitHub Analytics
+## `07` GitHub Analytics
 
 <div align="center">
 
@@ -175,24 +226,66 @@ Currently focused on:
 
 <img src="grid.svg" width="100%"/>
 
-## `07` Contribution Snake
+## `08` Contribution Snake
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/ContactAlexey/ContactAlexey/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-<sub>Generated automatically — see <code>.snake.yml</code></sub>
+<sub>Se genera automáticamente cada día vía GitHub Actions</sub>
 </div>
+
+<details>
+<summary><sub>⚙️ Si ves esta imagen rota — necesitas crear <code>.github/workflows/snake.yml</code> con este contenido y ejecutarlo una vez</sub></summary>
+
+```yaml
+name: Generate Snake Contribution Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Pasos: `Settings → Actions → General → Workflow permissions → Read and write permissions` → guarda → `Actions → Generate Snake... → Run workflow`. Tras la primera ejecución se crea la rama `output` y la imagen deja de estar rota.
+
+</details>
 
 <img src="grid.svg" width="100%"/>
 
-## `08` Trophies
+## `09` Trophies
 
 <div align="center">
 <img src="https://github-profile-trophy.vercel.app/?username=ContactAlexey&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7" />
+<br/><sub>Servicio de terceros — si sale roto, recarga la página del perfil</sub>
 </div>
 
 <img src="grid.svg" width="100%"/>
 
-## `09` Contact
+## `10` Contact
 
 <div align="center">
 
