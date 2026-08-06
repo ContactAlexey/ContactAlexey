@@ -234,7 +234,6 @@ App de escritorio con interfaz gráfica que recopila información técnica de un
 </div>
 
 <details>
-<summary><sub>⚙️ Si ves esta imagen rota — necesitas crear <code>.github/workflows/snake.yml</code> con este contenido y ejecutarlo una vez</sub></summary>
 
 ```yaml
 name: Generate Snake Contribution Animation
