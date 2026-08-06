@@ -230,59 +230,6 @@ App de escritorio con interfaz gráfica que recopila información técnica de un
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/ContactAlexey/ContactAlexey/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-<sub>Se genera automáticamente cada día vía GitHub Actions</sub>
-</div>
-
-<details>
-
-```yaml
-name: Generate Snake Contribution Animation
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Generate snake SVG
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.svg
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Pasos: `Settings → Actions → General → Workflow permissions → Read and write permissions` → guarda → `Actions → Generate Snake... → Run workflow`. Tras la primera ejecución se crea la rama `output` y la imagen deja de estar rota.
-
-</details>
-
-<img src="grid.svg" width="100%"/>
-
-## `09` Trophies
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=ContactAlexey&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7" />
-<br/><sub>Servicio de terceros — si sale roto, recarga la página del perfil</sub>
-</div>
-
-<img src="grid.svg" width="100%"/>
 
 ## `10` Contact
 
