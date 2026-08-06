@@ -1,0 +1,84 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <style>
+      .edge { stroke: #4F9DFF; stroke-opacity: 0.3; stroke-width: 1.2; fill: none; }
+      .node-outer { fill: none; stroke: #66E3FF; stroke-opacity: 0.5; }
+      .node-inner { fill: #0D1117; stroke: #4F9DFF; stroke-width: 1.5; }
+      .label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; fill: #F0F6FC; }
+      .sublabel { font-family: 'Courier New', monospace; font-size: 10px; fill: #8B949E; }
+      .ring { animation: spin 14s linear infinite; transform-origin: 450px 210px; }
+      .ring2 { animation: spin 20s linear infinite reverse; transform-origin: 450px 210px; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .core { animation: corepulse 2.6s ease-in-out infinite; }
+      @keyframes corepulse { 0%,100% { r: 26; opacity: .9; } 50% { r: 30; opacity: 1; } }
+      .dot { animation: dotpulse 2.2s ease-in-out infinite; }
+      @keyframes dotpulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
+      .packet { animation: move linear infinite; }
+      @keyframes move { from { offset-distance: 0%; opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } to { offset-distance: 100%; opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="420" fill="#0D1117"/>
+  <circle cx="450" cy="210" r="230" fill="url(#coreGlow)"/>
+
+  <!-- outer rotating rings -->
+  <circle class="ring" cx="450" cy="210" r="150" fill="none" stroke="#4F9DFF" stroke-opacity="0.15" stroke-dasharray="4 10"/>
+  <circle class="ring2" cx="450" cy="210" r="110" fill="none" stroke="#A855F7" stroke-opacity="0.18" stroke-dasharray="2 8"/>
+
+  <!-- edges from core to nodes -->
+  <g class="edge">
+    <path id="e1" d="M450,210 L180,90"/>
+    <path id="e2" d="M450,210 L730,90"/>
+    <path id="e3" d="M450,210 L120,220"/>
+    <path id="e4" d="M450,210 L780,220"/>
+    <path id="e5" d="M450,210 L220,350"/>
+    <path id="e6" d="M450,210 L680,350"/>
+  </g>
+
+  <!-- traveling packets -->
+  <circle r="3" fill="#66E3FF" filter="url(#blur)" class="packet" style="offset-path:path('M450,210 L180,90'); animation-duration:3s;"/>
+  <circle r="3" fill="#A855F7" filter="url(#blur)" class="packet" style="offset-path:path('M450,210 L730,90'); animation-duration:3.6s; animation-delay:.6s;"/>
+  <circle r="3" fill="#4F9DFF" filter="url(#blur)" class="packet" style="offset-path:path('M450,210 L120,220'); animation-duration:2.8s; animation-delay:1.1s;"/>
+  <circle r="3" fill="#66E3FF" filter="url(#blur)" class="packet" style="offset-path:path('M450,210 L780,220'); animation-duration:3.3s; animation-delay:.3s;"/>
+  <circle r="3" fill="#A855F7" filter="url(#blur)" class="packet" style="offset-path:path('M450,210 L220,350'); animation-duration:3.1s; animation-delay:.9s;"/>
+  <circle r="3" fill="#4F9DFF" filter="url(#blur)" class="packet" style="offset-path:path('M450,210 L680,350'); animation-duration:2.9s; animation-delay:1.4s;"/>
+
+  <!-- core node -->
+  <circle class="core" cx="450" cy="210" r="26" fill="#0D1117" stroke="#A855F7" stroke-width="2"/>
+  <text x="450" y="206" text-anchor="middle" class="label" font-weight="700" fill="#A855F7">CORE</text>
+  <text x="450" y="220" text-anchor="middle" class="sublabel">alexey.sys</text>
+
+  <!-- outer nodes -->
+  <g>
+    <circle class="node-outer dot" cx="180" cy="90" r="20"/>
+    <circle class="node-inner" cx="180" cy="90" r="14"/>
+    <text x="180" y="65" text-anchor="middle" class="label">Python</text>
+
+    <circle class="node-outer dot" cx="730" cy="90" r="20" style="animation-delay:.4s"/>
+    <circle class="node-inner" cx="730" cy="90" r="14"/>
+    <text x="730" y="65" text-anchor="middle" class="label">Java</text>
+
+    <circle class="node-outer dot" cx="120" cy="220" r="20" style="animation-delay:.8s"/>
+    <circle class="node-inner" cx="120" cy="220" r="14"/>
+    <text x="120" y="255" text-anchor="middle" class="label">SQL</text>
+
+    <circle class="node-outer dot" cx="780" cy="220" r="20" style="animation-delay:1.2s"/>
+    <circle class="node-inner" cx="780" cy="220" r="14"/>
+    <text x="780" y="255" text-anchor="middle" class="label">Shell</text>
+
+    <circle class="node-outer dot" cx="220" cy="350" r="20" style="animation-delay:.2s"/>
+    <circle class="node-inner" cx="220" cy="350" r="14"/>
+    <text x="220" y="385" text-anchor="middle" class="label">Kali Linux</text>
+
+    <circle class="node-outer dot" cx="680" cy="350" r="20" style="animation-delay:.6s"/>
+    <circle class="node-inner" cx="680" cy="350" r="14"/>
+    <text x="680" y="385" text-anchor="middle" class="label">Web / CMS</text>
+  </g>
+</svg>

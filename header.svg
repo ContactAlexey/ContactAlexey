@@ -1,0 +1,92 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F9DFF"/>
+      <stop offset="50%" stop-color="#66E3FF"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4F9DFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4F9DFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <style>
+      .line { stroke: #4F9DFF; stroke-opacity: 0.25; stroke-width: 1; }
+      .node { fill: #66E3FF; }
+      .pulse-node { animation: pulse 3s ease-in-out infinite; }
+      .packet { animation: travel linear infinite; }
+      @keyframes pulse {
+        0%,100% { opacity: 0.35; r: 2.2; }
+        50% { opacity: 1; r: 3.4; }
+      }
+      @keyframes travel {
+        from { offset-distance: 0%; opacity: 0; }
+        5% { opacity: 1; }
+        95% { opacity: 1; }
+        to { offset-distance: 100%; opacity: 0; }
+      }
+      .typing {
+        font-family: 'Courier New', monospace;
+        font-size: 15px;
+        fill: #8B949E;
+        opacity: 0;
+        animation: fadein 1.2s ease forwards 1.4s;
+      }
+      @keyframes fadein { to { opacity: 1; } }
+      .title { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <circle cx="600" cy="150" r="260" fill="url(#glow)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#4F9DFF" stroke-opacity="0.06">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
+    <path d="M100 0 V300 M300 0 V300 M500 0 V300 M700 0 V300 M900 0 V300 M1100 0 V300"/>
+  </g>
+
+  <!-- network lines -->
+  <g class="line">
+    <path id="p1" d="M80,60 L280,110 L470,70 L640,130"/>
+    <path id="p2" d="M1120,50 L900,100 L760,60 L640,130"/>
+    <path id="p3" d="M90,240 L260,190 L430,230 L640,170"/>
+    <path id="p4" d="M1130,250 L940,210 L790,240 L640,170"/>
+    <path d="M280,110 L260,190"/>
+    <path d="M900,100 L940,210"/>
+  </g>
+
+  <!-- nodes -->
+  <g class="node">
+    <circle class="pulse-node" cx="80" cy="60" r="2.5"/>
+    <circle class="pulse-node" cx="280" cy="110" r="2.5" style="animation-delay:.3s"/>
+    <circle class="pulse-node" cx="470" cy="70" r="2.5" style="animation-delay:.6s"/>
+    <circle class="pulse-node" cx="1120" cy="50" r="2.5" style="animation-delay:.2s"/>
+    <circle class="pulse-node" cx="900" cy="100" r="2.5" style="animation-delay:.5s"/>
+    <circle class="pulse-node" cx="760" cy="60" r="2.5" style="animation-delay:.8s"/>
+    <circle class="pulse-node" cx="90" cy="240" r="2.5" style="animation-delay:.4s"/>
+    <circle class="pulse-node" cx="260" cy="190" r="2.5" style="animation-delay:.7s"/>
+    <circle class="pulse-node" cx="430" cy="230" r="2.5" style="animation-delay:.1s"/>
+    <circle class="pulse-node" cx="1130" cy="250" r="2.5" style="animation-delay:.9s"/>
+    <circle class="pulse-node" cx="940" cy="210" r="2.5" style="animation-delay:.35s"/>
+    <circle class="pulse-node" cx="790" cy="240" r="2.5" style="animation-delay:.65s"/>
+    <circle cx="640" cy="130" r="4" fill="#A855F7"/>
+    <circle cx="640" cy="170" r="4" fill="#A855F7"/>
+  </g>
+
+  <!-- data packets traveling along lines -->
+  <circle r="3" fill="#66E3FF" filter="url(#softBlur)" class="packet" style="offset-path:path('M80,60 L280,110 L470,70 L640,130'); animation-duration:4s;"/>
+  <circle r="3" fill="#A855F7" filter="url(#softBlur)" class="packet" style="offset-path:path('M1120,50 L900,100 L760,60 L640,130'); animation-duration:5s; animation-delay:1s;"/>
+  <circle r="3" fill="#4F9DFF" filter="url(#softBlur)" class="packet" style="offset-path:path('M90,240 L260,190 L430,230 L640,170'); animation-duration:4.5s; animation-delay:.5s;"/>
+
+  <!-- title -->
+  <text x="600" y="140" text-anchor="middle" class="title" font-size="52" fill="url(#textGrad)">ALEXEY TENLLADO</text>
+  <text x="600" y="172" text-anchor="middle" class="typing">&gt; cybersecurity_enthusiast &amp;&amp; developer --mode=offense_defense</text>
+  <text x="600" y="196" text-anchor="middle" font-family="Courier New, monospace" font-size="13" fill="#4F9DFF" opacity="0.85">Building. Breaking. Learning. Repeat.</text>
+</svg>

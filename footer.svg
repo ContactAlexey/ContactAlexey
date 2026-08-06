@@ -1,0 +1,25 @@
+<svg width="1200" height="160" viewBox="0 0 1200 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <radialGradient id="fGlow" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .fline { animation: fsweep 4s ease-in-out infinite; }
+      @keyframes fsweep { 0%,100% { stroke-dashoffset: 0; opacity:.5; } 50% { stroke-dashoffset: 60; opacity:1; } }
+      .ftext { font-family: 'Courier New', monospace; font-size: 13px; fill: #8B949E; }
+      .fdot { animation: fpulse 2s ease-in-out infinite; }
+      @keyframes fpulse { 0%,100% { r:2.5; opacity:.5; } 50% { r:4; opacity:1; } }
+    </style>
+  </defs>
+  <rect width="1200" height="160" fill="url(#fBg)"/>
+  <rect width="1200" height="160" fill="url(#fGlow)"/>
+  <path class="fline" d="M0,40 H1200" stroke="#4F9DFF" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="6 10"/>
+  <circle class="fdot" cx="600" cy="40" r="3" fill="#66E3FF"/>
+  <text x="600" y="95" text-anchor="middle" class="ftext">system.status : online // thanks_for_visiting()</text>
+  <text x="600" y="125" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#4F9DFF" opacity="0.8">© Alexey Tenllado — Built with curiosity and caffeine</text>
+</svg>
