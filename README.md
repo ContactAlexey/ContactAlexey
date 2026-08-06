@@ -14,7 +14,7 @@
 
 </div>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `01` About Me
 
@@ -89,7 +89,7 @@ Currently focused on:
 </tr>
 </table>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `03` Development Philosophy
 
@@ -122,24 +122,24 @@ Currently focused on:
 </tr>
 </table>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `04` Network Visualization
 
 <div align="center">
 <sub>A simplified map of my current stack, routed through a central node</sub>
 <br/><br/>
-<img src="assets/network.svg" width="85%"/>
+<img src="network.svg" width="85%"/>
 </div>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `05` Cybersecurity & AI
 
 <div align="center">
 <sub>Where offensive security thinking meets automated pattern recognition</sub>
 <br/><br/>
-<img src="assets/neural.svg" width="85%"/>
+<img src="neural.svg" width="85%"/>
 </div>
 
 <table align="center">
@@ -164,7 +164,7 @@ Currently focused on:
 </tr>
 </table>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `06` GitHub Analytics
 
@@ -181,7 +181,7 @@ Currently focused on:
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=ContactAlexey&bg_color=0D1117&color=66E3FF&line=4F9DFF&point=A855F7&area=true&hide_border=true" width="100%"/>
 </div>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `07` Contribution Snake
 
@@ -190,7 +190,7 @@ Currently focused on:
 <sub>Generated automatically — see <code>.github/workflows/snake.yml</code></sub>
 </div>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `08` Trophies
 
@@ -198,7 +198,7 @@ Currently focused on:
 <img src="https://github-profile-trophy.vercel.app/?username=ContactAlexey&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7" />
 </div>
 
-<img src="assets/grid.svg" width="100%"/>
+<img src="grid.svg" width="100%"/>
 
 ## `09` Contact
 
@@ -216,4 +216,4 @@ Currently focused on:
 
 </div>
 
-<img src="assets/footer.svg" width="100%"/>
+<img src="footer.svg" width="100%"/>
