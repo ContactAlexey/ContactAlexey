@@ -18,11 +18,7 @@
 
 ## `01` About Me
 
-<table>
-<tr>
-<td width="60%" valign="top">
-
-I'm **19**, and I spend most of my time figuring out how the systems around us actually work — and how they break.
+I'm **20**, and I spend most of my time figuring out how the systems around us actually work — and how they break.
 
 My interest sits right in the overlap between **software development**, **cybersecurity** and **AI**. I like the duality of the offensive/defensive mindset: understanding how something can be attacked is what makes you able to defend it properly.
 
@@ -33,15 +29,6 @@ Currently focused on:
 - 🌐 Web development & CMS-based platforms
 - 🤖 Exploring practical AI tooling and automation
 - 📡 Sharing what I learn — cybersecurity tips, dev projects, and behind-the-scenes builds
-
-</td>
-<td width="40%" valign="top" align="center">
-
-<img src="https://media.giphy.com/media/XgN35QOWSzLKGISuxm/giphy.gif" width="220"/>
-
-</td>
-</tr>
-</table>
 
 <img src="grid.svg" width="100%"/>
 
