@@ -187,7 +187,7 @@ Currently focused on:
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/ContactAlexey/ContactAlexey/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-<sub>Generated automatically — see <code>.github/workflows/snake.yml</code></sub>
+<sub>Generated automatically — see <code>.snake.yml</code></sub>
 </div>
 
 <img src="grid.svg" width="100%"/>
